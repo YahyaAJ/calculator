@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoendy | Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>©Calculator</h2>
+        <form name="form">
+            <input type="text" disabled class="textarea" name="textarea" placeholder="0">
+        </form>
+            <div class="act-button">
+                <input type="button" class="button" value="7" onclick="insert(7)">
+                <input type="button" class="button" value="8" onclick="insert(8)">
+                <input type="button" class="button" value="9" onclick="insert(9)">
+                <input type="button" class="button-red" value="×" onclick="insert('*')"><br>
+                <input type="button" class="button" value="4" onclick="insert(4)">
+                <input type="button" class="button" value="5" onclick="insert(5)">
+                <input type="button" class="button" value="6" onclick="insert(6)">
+                <input type="button" class="button-red" value=" /" onclick="insert('/')"><br>
+                <input type="button" class="button" value="1" onclick="insert(1)">
+                <input type="button" class="button" value="2" onclick="insert(2)">
+                <input type="button" class="button" value="3" onclick="insert(3)">
+                <input type="button" class="button-red" value="<" onclick="back()"><br>
+                <input type="button" class="button-red" value=" -" onclick="insert('-')">
+                <input type="button" class="button" value="0" onclick="insert(0)">
+                <input type="button" class="button-red" value="+" onclick="insert('+')">
+                <input  type="button" class="button-red" value="C" onclick="clean()"><br>
+                <input type="button" class="button-equal" value="=" onclick="equal()">
+            </div>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
